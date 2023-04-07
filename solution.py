@@ -13,5 +13,5 @@ def solution(p: float, x: np.array) -> tuple:
     b = x.max()
     alpha = 1 - p
     loc = 0.017
-    return loc + b/(2*alpha**(1/len(x))), \
-           loc + b/2
+    return b/2 - loc, \
+           b/(2*alpha**(1/len(x))) + loc
